@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            background-color: blueviolet;
+            height: 100px;
+        }
+        main{
+            background-color: black;
+            /*height: 400px;*/
+            padding: 15px;
+        }
+        .container{
+            background-color: greenyellow;
+            /*height: 100px;*/
+            margin: 8px 8px;
+            padding: 15px 15px;
+            text-align: center;
+            display: flex;
+            /*color: antiquewhite;*/
+        }
+        .box1{
+            background-color: blanchedalmond;
+            height: 70vh;
+            width: 50%;
+           /* display: flex;*/
+            margin: 5px 10px;
+        }
+        .box2{
+            background-color: magenta;
+            height: 70vh;
+            width: 50%;
+            /*display: flex;*/
+            margin: 5px 10px;
+        }
+        .text-box{
+            border: 2px solid white;
+            height: 50px;
+            margin: 5px 5px;
+            padding: 5px 5px;
+            color: aquamarine;
+        }
+        footer{
+            background-color: brown;
+            height: 100px;
+        }
+        .circle{
+            background: orange;
+            height: 35px;
+            width: 35px;
+            border-radius: 35px;
+            right: 15px;
+            bottom: 12px;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="text-box">
+            <p>I am Abhishek Negi</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="circle">
+
+        </div>
+    </footer>
+</body>
+</html>

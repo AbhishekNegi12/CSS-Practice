@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: rgb(6, 110, 75);
+            height: 70vh;
+            width: 40vw;
+        }
+        .box{
+            /*background-color: aquamarine;*/
+            height: 45px;
+            width: 45px;
+            /*animation: abhiAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-in-out;
+            animation-timing-function: cubic-bezier(0, 0.83, 0, 0.95);
+            animation-delay: 0s;*/
+
+            /* can be used to dsign mathematical and physics concepts such as 'Simple Harmonic Motion(Pendulum)'*/
+            /*animation-direction: alternate-reverse;*/
+            /*animation-play-state: paused;*/
+
+            /*Shortcut way of writing this*/
+            /*animation: abhiBhai 3s ease-in-out 0s 3 reverse ;*/
+
+            /*Multiple Animation using comma separated values*/
+            animation: abhiAnimation 3s ease-in-out 1s 3 , newAbhi 3s ease-in-out 1s 3;
+        }
+        @keyframes abhiAnimation {
+            from{
+                border-color: rgb(208, 167, 249);
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: rgb(49, 28, 70);
+            }
+        }
+        @keyframes abhiBhai {
+            from{
+                
+            }
+            to{
+                transform: translateX(1000px);
+            }
+        }
+        @keyframes newAbhi {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

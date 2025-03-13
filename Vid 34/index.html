@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            /* float: left; */
+            float: right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card :nth-child(1){
+            background-color: bisque;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="img.jpg" alt="" width="180 px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem, possimus perspiciatis eum quos unde nemo id. Deserunt rem, voluptatibus, veritatis beatae necessitatibus voluptates iste nulla ad similique nam natus quia et illum blanditiis?</p>
+        </div>
+        <div class="card">Card 2
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quia eveniet eos a unde cum ab ratione sunt fugiat illo quidem quam possimus hic nostrum at, magnam ullam vero assumenda nesciunt. Hic dolorem eum rerum ipsa quas porro. Dolorem, unde possimus quasi doloribus quos corrupti iusto iste dolore, reprehenderit accusamus minima voluptas sint id aut sit quod autem, nemo expedita exercitationem earum illum laborum officiis. Perferendis, numquam dicta nam a, enim nobis iusto obcaecati totam beatae eligendi eveniet voluptas minus veniam aliquam nostrum debitis reiciendis? Optio quae a veniam nihil repellat totam voluptatum ducimus ratione illo! Vitae adipisci dolorem consequuntur similique beatae ab nemo? Aspernatur dicta assumenda iure aliquam molestias repudiandae optio quis, dignissimos ut nihil inventore corporis ad alias fugit blanditiis possimus voluptatibus illo quae maxime accusantium exercitationem porro tempore quasi. Iusto sint nam exercitationem! Minus aperiam sed voluptates rem dolor qui placeat ipsam. Quibusdam ullam ducimus voluptate distinctio quisquam nemo, fugiat iusto sunt magnam mollitia veritatis aliquid earum quam cum quidem molestiae recusandae deleniti. Ad totam adipisci nobis illo maxime itaque debitis sed ratione quae qui aut vel, quia vero nesciunt exercitationem nulla omnis iusto cupiditate culpa recusandae. Quas minus laudantium totam nesciunt animi et, neque minima quae?</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

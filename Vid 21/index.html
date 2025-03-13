@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specifity</title>
+    <style>
+      /* The specifity of this selector is 1 */
+      h1 {
+        color: coral;
+      }
+
+      /* The specifity of this selector is 10 */
+      .cred {
+        color: red;
+      }
+
+      /* The specifity of this selector is 10 */
+      .cyellow {
+        color: yellow;
+      }
+
+      /* The specifity of this selector is 10 */
+      .cpurple {
+        color: purple;
+      }
+      /* This is an example of attribute selector */
+      /* The specifity of this selector is 10 */
+      [data-x="a"]{
+        color: green;
+      }
+
+      /* Consider this example */
+      /* The specifity of this selector is 1 + 10 = 11 */
+      /* 1 becausse of h1 as an element selector and 10 because of class selector cyellow */
+      h1.cyellow{
+        color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <h1 style="color: aqua;"   class="cpurple cred cyellow">Heading 1 : We will learn Specifity in this</h1> -->
+      <h1 class="cpurple cred cyellow">
+        Heading 1 : We will learn Specifity in this
+      </h1>
+      <!-- <h1 class="cpurple cred cyellow" data-x="a" >
+        Heading 1 : We will learn Specifity in this
+      </h1> -->
+    </div>
+  </body>
+</html>

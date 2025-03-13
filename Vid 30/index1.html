@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document To change color theme</title>
+    <style>
+        :root{
+            --color:rgb(2, 108, 108);
+            --seccolor:rgb(81, 191, 201);
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /*background-color: rgb(189, 27, 27);*/
+            background-color: var(--color);
+        }
+        .content{
+            /*background-color: rgb(234, 124, 124);*/
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            padding: 25px;
+            list-style: none;
+        }
+        ul li:first-child{
+            --color:rgb(24, 73, 156);
+            background-color: var(--color,maroon);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus obcaecati ratione voluptatibus minus pariatur quam maiores? Quis, facere. Quam doloribus, ipsum sequi voluptatibus commodi fuga officiis, quia rem qui maxime saepe perferendis laboriosam. Fuga, nam fugiat itaque commodi voluptate nemo. Alias, nisi distinctio.
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mote On CSS Selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: yellow;
+        }*/
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <!-- <div class="box">Hey I am a Box
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, consectetur tempora! Nam neque illo in aliquam consequuntur, ullam laboriosam omnis deserunt labore animi amet placeat tempora eaque. Pariatur possimus illo fugiat, aliquam iure nam rerum quia, dolore non reprehenderit sit ex dolorem unde aut sequi nisi.
+        </div> -->
+        <div class="box">I am first box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+</body>
+</html>

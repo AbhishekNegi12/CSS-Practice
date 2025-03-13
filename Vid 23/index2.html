@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INLINE ELEMENT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;;
+            /*Inline margin and padding dont work on the top*/
+            /*display: inline;*/
+            display: inline-block;
+            width: 200px;
+            padding: 25px;
+            margin: 30px;
+        }
+        .box1{
+            /*display: none;*/
+
+            /*display: flex;
+            justify-content: center;*/
+            
+            display: inline-flex;
+
+            /*visibility: hidden;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a Box
+    </div>
+    <div class="box">and Brown in color</div>
+
+    <span>I am Abhishek</span>
+    <span>Negi</span>
+</body>
+</html>

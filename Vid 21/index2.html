@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        /* The specifity of this is 1*/
+        h1{
+            color : aqua;
+        }
+        
+        /* The specifity of this is 10*/
+        .yellow{
+            color: yellow;
+        }
+
+        /* The specifity of this is 1+10 = 11*/
+        h1.purple{
+            color: purple;
+        }
+        
+        /* The specifity of this is 10*/
+        .cred{
+            color: crimson;
+        }
+        
+        /* The specifity of this is 10*/
+        /*[data-x=a]{
+            background-color: burlywood;
+        }*/
+        [data-x=a]{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <h1 style="color:blanchedalmond" class="yellow cred purple">CSS SPECIFITY</h1> -->
+         <h1 class="cred yellow purple" data-x="a"> I am Abhishek</h1>
+    </div>
+</body>
+</html>
